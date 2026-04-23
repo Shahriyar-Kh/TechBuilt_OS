@@ -8,7 +8,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import CourseCard from "@/components/CourseCard";
 import SpecializationCard from "@/components/SpecializationCard";
 import { courses, specializations, testimonials, faqs, blogPosts } from "@/lib/data";
-import heroImg from "@/assets/hero-main.jpg";
+import HeroCarousel from "@/components/HeroCarousel";
 
 const stats = [
   { icon: Users, value: "12,400+", label: "Students enrolled" },
@@ -30,12 +30,14 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="TechBuilt OS — Premium Tech Education & Coding Specializations"
-        description="Become a job-ready developer with TechBuilt OS. Learn HTML, CSS, JavaScript, React, Python, Django and more through expert-led courses and full-stack specializations."
+        title="TechBuilt OS — TechBuilt Open School | Job-Ready Tech Skills"
+        description="TechBuilt OS (TechBuilt Open School) delivers job-ready tech skills through single courses and industry-level specializations in HTML, CSS, JavaScript, React, Python, Django and more."
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "EducationalOrganization",
-          name: "TechBuilt OS",
+          name: "TechBuilt OS — TechBuilt Open School",
+          alternateName: "TechBuilt Open School",
+          description: "Open school providing job-ready tech skills via single courses and industry-level specializations.",
           url: typeof window !== "undefined" ? window.location.origin : "",
           sameAs: ["https://twitter.com/techbuiltos", "https://github.com/techbuiltos"],
         }}
@@ -58,8 +60,8 @@ export default function Home() {
                 className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass border border-border/60 text-sm shadow-premium"
               >
                 <Sparkles className="h-3.5 w-3.5 text-accent" />
-                <span className="font-medium">Spring intake now open</span>
-                <span className="text-muted-foreground">— save 30% on specializations</span>
+                <span className="font-medium">TechBuilt Open School</span>
+                <span className="text-muted-foreground">— Spring intake now open</span>
               </motion.div>
 
               <motion.h1
@@ -68,8 +70,8 @@ export default function Home() {
                 transition={{ duration: 0.7, delay: 0.05 }}
                 className="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] tracking-tight"
               >
-                The operating system for{" "}
-                <span className="text-gradient">tech careers</span>.
+                Job-ready tech skills for{" "}
+                <span className="text-gradient">industry-level careers</span>.
               </motion.h1>
 
               <motion.p
@@ -78,8 +80,9 @@ export default function Home() {
                 transition={{ duration: 0.7, delay: 0.15 }}
                 className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed"
               >
-                Premium courses and specializations in frontend, backend and full-stack development —
-                designed by senior engineers, mentored live, and built to ship you into a real tech role.
+                TechBuilt OS — short for <strong className="text-foreground font-semibold">TechBuilt Open School</strong> — provides
+                low-cost single courses and full specializations that prepare you for real industry jobs and opportunities,
+                taught by senior engineers and mentored live.
               </motion.p>
 
               <motion.div
@@ -126,10 +129,7 @@ export default function Home() {
               transition={{ duration: 0.9, delay: 0.2 }}
               className="lg:col-span-5 relative"
             >
-              <div className="relative rounded-3xl overflow-hidden shadow-premium-lg border border-border/60">
-                <img src={heroImg} alt="Students learning to code" className="w-full h-auto" width={1920} height={1080} />
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 via-transparent to-transparent" />
-              </div>
+              <HeroCarousel />
               {/* Floating cards */}
               <motion.div
                 initial={{ opacity: 0, x: -20, y: 20 }}
