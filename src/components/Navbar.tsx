@@ -51,8 +51,8 @@ export default function Navbar() {
               <div className="absolute inset-0 rounded-xl bg-gradient-primary opacity-0 group-hover:opacity-50 blur-md transition-opacity" />
             </div>
             <div className="flex flex-col leading-none">
-              <span className="font-display font-extrabold text-lg tracking-tight">TechBuilt</span>
-              <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-semibold">OS</span>
+              <span className="font-display font-extrabold text-lg tracking-tight">TechBuilt OS</span>
+              <span className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground font-semibold">Open School</span>
             </div>
           </Link>
 

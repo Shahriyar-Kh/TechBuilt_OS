@@ -23,13 +23,13 @@ export default function About() {
   return (
     <>
       <SEO
-        title="About TechBuilt OS — Premium Tech Education Built by Engineers"
-        description="Learn about TechBuilt OS — our mission to make premium tech education accessible, our values, and the team building career-ready developers."
+        title="About TechBuilt OS — TechBuilt Open School for Job-Ready Tech Skills"
+        description="TechBuilt OS stands for TechBuilt Open School — an open school providing job-ready tech skills through low-cost single courses and industry-level specializations."
       />
       <PageHero
         eyebrow="About us"
-        title={<>We're building the operating system for <span className="text-gradient">tech careers</span>.</>}
-        description="TechBuilt OS was founded by senior engineers and educators who believed online learning could be premium, structured, and outcomes-driven — not just another video library."
+        title={<>An <span className="text-gradient">open school</span> for job-ready tech skills.</>}
+        description="TechBuilt OS — short for TechBuilt Open School — was founded by senior engineers and educators to make industry-level tech training affordable, structured, and outcomes-driven for everyone."
       />
 
       <section className="section container">
@@ -37,11 +37,11 @@ export default function About() {
           <Reveal>
             <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">Our mission</p>
             <h2 className="font-display text-4xl md:text-5xl font-extrabold leading-tight mb-6">
-              Make world-class tech education <span className="text-gradient-accent">accessible to anyone</span>.
+              Make industry-level tech skills <span className="text-gradient-accent">accessible to anyone</span>.
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>We started TechBuilt OS in 2021 after years of mentoring junior developers and seeing the same gap: massive online courses lacked structure, mentorship and accountability — bootcamps were prohibitively expensive.</p>
-              <p>So we built a third path. Premium production, real mentors, project-based learning, and pricing that respects you. We've since helped 12,000+ learners transition into their first or next tech role.</p>
+              <p>TechBuilt OS — <strong className="text-foreground">TechBuilt Open School</strong> — was started in 2021 to close a real gap: massive online courses lacked structure and mentorship, while bootcamps were unaffordable for most learners.</p>
+              <p>So we built an open school. Low-cost single courses for one skill at a time, and full specializations that prepare you for real industry jobs and opportunities — with live mentors, real projects, and career support all the way to your first offer.</p>
             </div>
           </Reveal>
           <Reveal delay={0.15}>

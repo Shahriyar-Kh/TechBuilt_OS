@@ -12,12 +12,13 @@ export default function Footer() {
                 <Sparkles className="h-5 w-5 text-primary-foreground" />
               </div>
               <div className="flex flex-col leading-none">
-                <span className="font-display font-extrabold text-xl">TechBuilt</span>
-                <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-semibold">OS</span>
+                <span className="font-display font-extrabold text-xl">TechBuilt OS</span>
+                <span className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground font-semibold">TechBuilt Open School</span>
               </div>
             </Link>
             <p className="text-muted-foreground max-w-sm leading-relaxed">
-              Premium tech education designed to take you from curious beginner to job-ready professional with mentors, projects, and a thriving community.
+              <strong className="text-foreground font-semibold">TechBuilt Open School</strong> — job-ready tech skills through low-cost
+              single courses and industry-level specializations, with mentors, real projects, and a thriving community.
             </p>
             <div className="flex gap-2">
               {[Github, Twitter, Linkedin, Youtube].map((Icon, i) => (
