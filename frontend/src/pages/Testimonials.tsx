@@ -10,8 +10,19 @@ const extra = [
   { name: "Kenji Tanaka", role: "Full Stack @ Vercel", text: "From zero to my first dev job in 7 months. Worth every dollar.", rating: 5 },
 ];
 
+type TestimonialItem = {
+  name: string;
+  role: string;
+  text: string;
+  rating: number;
+  image?: string;
+};
+
 export default function Testimonials() {
-  const all = [...testimonials.map(t => ({...t, image: t.image})), ...extra.map(t => ({...t, image: undefined as any}))];
+  const all: TestimonialItem[] = [
+    ...testimonials.map((t) => ({ ...t, image: t.image })),
+    ...extra,
+  ];
   return (
     <>
       <SEO

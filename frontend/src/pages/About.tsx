@@ -3,10 +3,10 @@ import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
-import { Heart, Compass, Sparkles, Award, Users, Target, ArrowRight } from "lucide-react";
+import { Compass, Sparkles, Award, Users, ArrowRight } from "lucide-react";
 
 const values = [
-  { icon: Heart, title: "Student-first always", desc: "Every decision starts with: 'does this make our students more successful?'" },
+  { icon: Users, title: "Student-first always", desc: "Every decision starts with: 'does this make our students more successful?'" },
   { icon: Compass, title: "Real-world relevance", desc: "We teach what actually ships — not what looks good on a syllabus." },
   { icon: Sparkles, title: "Craft & quality", desc: "Premium production, beautifully designed lessons, no filler content." },
   { icon: Award, title: "Outcomes over hype", desc: "We measure success by careers transformed, not just enrollments." },
