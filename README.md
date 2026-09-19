@@ -226,7 +226,7 @@ Co-Founder, TechBuilt Open School · Software Engineer · Full-Stack Python Deve
 
 - Portfolio: https://shahriyarkhan.com
 - GitHub: https://github.com/Shahriyar-Kh
-- LinkedIn: https://www.linkedin.com/in/shahriyar-khan-developer/
+- LinkedIn: https://www.linkedin.com/in/shahriyar-kh/
 
 ---
 
